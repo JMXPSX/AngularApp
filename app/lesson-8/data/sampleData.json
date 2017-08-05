@@ -1,0 +1,33 @@
+{
+    "personalData" : 
+    [
+        {
+            "name" : "Allen Iverson",
+            "age" : 40
+        },
+        {
+            "name" : "Brent Barry",
+            "age" : 50
+        },
+        {
+            "name" : "Harrison Barnes",
+            "age" : 25
+        },
+        {
+            "name" : "Courtney Lee",
+            "age" : 29
+        },
+        {
+            "name" : "Nerlens Noel",
+            "age" : 21
+        },
+        {   
+            "name" : "Terrence Ross",
+            "age" : 26
+        },
+        {   
+            "name" : "Brandon Jennings",
+            "age" : 28
+        }
+    ]
+}

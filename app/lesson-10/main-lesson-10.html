@@ -1,0 +1,63 @@
+<div class="container" ng-controller="SearchMusicController as searchMusicCtrl">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 10: All AngularJS Functionalities</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row">
+        <!-- Left Hand Side -->
+        <div class="col-xs-6" style="border-right: 1px solid #8c348b;">
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">Search Your Favorite Music</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+            
+            <div class="row add-padding">
+                <div class="col-xs-2"><strong>Search: </strong></div>
+                <div class="col-xs-9 input-group">
+                    <input type="text" class="form-control" ng-model="searchMusicCtrl.searchMusic"/>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <strong>By: </strong>{{searchMusicCtrl.searchBySelection}} <span class="glyphicon glyphicon-chevron-down"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li ng-class="{'active' : searchMusicCtrl.searchBySelection == 'Artist Name'}">
+                                <a href="" ng-click="searchMusicCtrl.searchBySelection = 'Artist'">Artist</a>
+                            </li>
+                            <li ng-class="{'active' : searchMusicCtrl.searchBySelection == 'Album Name'}">
+                                <a href="" ng-click="searchMusicCtrl.searchBySelection = 'Album'">Album</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row add-padding"></div>
+            <div class="row add-padding scrollable">
+                <div class="list-group">
+                    <a href="" class="list-group-item" 
+                       ng-repeat="musicData in searchMusicCtrl.musicDataList|artistFilter:searchMusicCtrl.searchMusic:searchMusicCtrl.searchBySelection|orderBy:'artistName'"
+                       ng-click="searchMusicCtrl.selectMusic(musicData)">
+                        <h4 class="list-group-item-heading">
+                            <span class="header-h3">
+                                <strong>{{musicData.artistName}}</strong>
+                            </span>
+                        </h4>
+                        <p class="list-group-item-text">Album: {{musicData.albumName}}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Hand Side -->
+        <div class="col-xs-6" style="padding-left:32px">
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">Album Information</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+            
+            <artist-information selected-item="searchMusicCtrl.selectedMusic" all-artists="searchMusicCtrl.musicDataList"></artist-information>
+        </div>
+    </div>
+    <div class="row add-padding"></div>
+    <div class="row add-padding"></div>
+</div>

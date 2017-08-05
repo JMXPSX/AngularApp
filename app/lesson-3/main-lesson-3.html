@@ -1,0 +1,75 @@
+<div class="container" ng-controller="ModelBindCtrl as modelBind">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 3: Binding AngularJS Objects Through Models</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    <!-- First Half -->
+    <div class="row">
+        <div class="col-xs-6" style="border-right: 1px solid #8c348b;">
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">Normal Two-Way Binding</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+
+            <div class="row add-padding">
+                <div class="col-xs-8">
+                    <button type="button" class="btn btn-equens" ng-click="modelBind.generateSampleData()"><h5>Bind Sample Data</h5></button> 
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">Two-Way Binding Using AngularJS Factory</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+            
+            <div class="row add-padding">
+                <div class="col-xs-8">
+                    <button type="button" class="btn btn-equens" ng-click="modelBind.bindFactoryData()"><h5>Bind Factory Data</h5></button> 
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <!-- Second Half -->
+            <div style="margin-top: 30px;">
+                <form class="add-padding">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <strong>First Name: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="modelBind.form.firstName" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Last Name: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="modelBind.form.lastName" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Position: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="modelBind.form.position" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Salary: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="modelBind.form.salary" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>

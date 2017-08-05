@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS For Dummies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--### NAVBAR ###-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="banner">
+        <span class="navbar-brand">AngularJS For Dummies</span>
+    </nav>
+    <div class="container main-content" ng-controller="MainCtrl as main">
+        <div class="row">
+            <div class="col-xs-2">
+                <label for="cb_nav"><span class="header-h1">Go To: </span></label>
+            </div>
+            <div class="col-xs-9">
+                <select id="cb_nav" class="form-control" 
+                        ng-model="main.navigateTo" 
+                        ng-init="main.navigateTo = '0'"
+                        ng-change="main.navigateToOption(main.navigateTo)">
+                    <option value="0">Select an Option</option>
+                    <option value="1">Lesson 1: Binding</option>
+                    <option value="2">Lesson 2: Controllers</option>
+                    <option value="3">Lesson 3: Model</option>
+                    <option value="4">Lesson 4: Model Inheritance</option>
+                    <option value="5">Lesson 5: Service</option>
+                    <option value="6">Lesson 6: Provider</option>
+                    <option value="7">Lesson 7: Constants</option>
+                    <option value="8">Lesson 8: Filters</option>
+                    <option value="9">Lesson 9: Directives</option>
+                    <option value="10">Lesson 10: All Functionalities</option>
+                </select>
+            </div>
+        </div>
+    </div>
+  <div ng-view></div>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/scripts/FileSaver/FileSaver.js"></script>
+    <script src="bower_components/CSV-JS/csv.js"></script>
+    <script src="app.js"></script>
+    
+    <script src="mainController.js"></script>
+    
+    <script src="lesson-1/main-lesson-1.js"></script>
+    
+    <script src="lesson-2/parentController.js"></script>
+    <script src="lesson-2/childController.js"></script>
+    
+    <script src="lesson-3/modelBindController.js"></script>
+    <script src="lesson-3/modelBindFormModel.js"></script>
+    
+    <script src="lesson-4/modelInheritanceController.js"></script>
+    <script src="lesson-4/childModel.js"></script>
+    <script src="lesson-4/parentModel.js"></script>
+    
+    <script src="lesson-5/asObjectService.js"></script>
+    <script src="lesson-5/jsonService.js"></script>
+    <script src="lesson-5/serviceController.js"></script>
+    
+    <script src="lesson-6/providerConfig.js"></script>
+    <script src="lesson-6/providerController.js"></script>
+    <script src="lesson-6/sampleProvider.js"></script>
+    
+    <script src="lesson-7/constantController.js"></script>
+    <script src="lesson-7/generateConstantUtil.js"></script>
+    <script src="lesson-7/sampleConstants.js"></script>
+    
+    <script src="lesson-8/filterController.js"></script>
+    <script src="lesson-8/filterService.js"></script>
+    <script src="lesson-8/customFilter.js"></script>
+    
+    <script src="lesson-9/directiveController.js"></script>
+    <script src="lesson-9/isolatedScopeDirective.js"></script>
+    <script src="lesson-9/normalDirective.js"></script>
+    
+    <script src="lesson-10/artistInformation.js"></script>
+    <script src="lesson-10/searchMusicController.js"></script>
+    <script src="lesson-10/searchMusicFilter.js"></script>
+    <script src="lesson-10/searchMusicFormModel.js"></script>
+    <script src="lesson-10/searchMusicService.js"></script>
+    <script src="lesson-10/searchConstants.js"></script>
+    
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

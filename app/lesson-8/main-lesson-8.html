@@ -1,0 +1,108 @@
+<div class="container" ng-controller="FilterCtrl as filterCtrl">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 8: Understanding AngularJS Filters</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">AngularJS Filters</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-4">&nbsp;</div>
+        <div class="col-xs-4">
+            <strong>Unfiltered Value</strong>
+        </div>
+        <div class="col-xs-4">
+            <strong>Filtered Value</strong>
+        </div>
+    </div>
+    <!-- Date -->
+    <div class="row add-padding">
+        <div class="col-xs-4"><strong>Date (dd.MM.yyyy): </strong></div>
+        <div class="col-xs-4">
+            {{filterCtrl.dateToday}}
+        </div>
+        <div class="col-xs-4">
+            {{filterCtrl.dateToday | date: 'dd.MM.yyyy'}}
+        </div>
+    </div>
+    <!-- Amount -->
+    <div class="row add-padding">
+        <div class="col-xs-4"><strong>Amount (USD): </strong></div>
+        <div class="col-xs-4">
+            {{filterCtrl.amount}}
+        </div>
+        <div class="col-xs-4">
+            {{filterCtrl.amount | currency}}
+        </div>
+    </div>
+    <!-- Lower Case -->
+    <div class="row add-padding">
+        <div class="col-xs-4"><strong>Text Transform (lowercase): </strong></div>
+        <div class="col-xs-4">
+            {{'SAMPLE TEXT'}}
+        </div>
+        <div class="col-xs-4">
+            {{'SAMPLE TEXT' | lowercase}}
+        </div>
+    </div>
+    <!-- Lower Case -->
+    <div class="row add-padding">
+        <div class="col-xs-4"><strong>Text Transform (UPPERCASE): </strong></div>
+        <div class="col-xs-4">
+            {{'sample text'}}
+        </div>
+        <div class="col-xs-4">
+            {{'sample text' | uppercase}}
+        </div>
+    </div>
+    <!-- Custom Filter Section -->
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">Custom Filters</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-1">
+            <strong>Filters: </strong>
+        </div>
+        <div class="btn-toolbar">
+            <button type="button" class="btn btn-equens" ng-click="filterCtrl.filterBy = 'all'">
+                Reset Data
+            </button> 
+            <button type="button" class="btn btn-equens" ng-click="filterCtrl.filterBy = 'name'">
+                Starts With 'B'
+            </button> 
+            <button type="button" class="btn btn-equens" ng-click="filterCtrl.filterBy = 'age'">
+                Age Between 20 - 30
+            </button> 
+        </div>
+    </div>
+    
+    <div class="add-padding"></div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-4" style="text-align:center">
+            <strong>Name</strong>
+        </div>
+        <div class="col-xs-4" style="text-align:center">
+            <strong>Age</strong>
+        </div>
+    </div>
+    
+    <div class="add-padding"></div>
+    
+    <div class="row extra-padding" ng-repeat="person in filterCtrl.personInfoList | CustomTextFilter:filterCtrl.filterBy">
+        <div class="col-xs-4" style="text-align:center">
+            {{person.name}}
+        </div>
+        <div class="col-xs-4" style="text-align:center">
+            {{person.age}}
+        </div>
+    </div>
+    
+    <div class="add-padding"></div>
+    <div class="add-padding"></div>
+</div>

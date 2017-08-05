@@ -1,0 +1,179 @@
+{
+    "musicData" :[
+        {
+            "artistName" : "Nirvana",
+            "albumName" : "In Utero",
+            "yearRelease" : 1993,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Grunge Rock",
+                "Garage Rock",
+                "Alternative"
+            ]
+        },
+        {
+            "artistName" : "Nirvana",
+            "albumName" : "Nevermind",
+            "yearRelease" : 1991,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Grunge Rock",
+                "Alternative"
+            ]
+        },
+        {
+            "artistName" : "All Time Low",
+            "albumName" : "The Party Scene",
+            "yearRelease" : 2005,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Punk Rock",
+                "Emo"
+            ]
+        },
+        {
+            "artistName" : "All Time Low",
+            "albumName" : "Nothing Personal",
+            "yearRelease" : 2008,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Post Hardcore",
+                "Emo"
+            ]
+        },
+        {
+            "artistName" : "Tim McGraw",
+            "albumName" : "Tim McGraw",
+            "yearRelease" : 1993,
+            "mainGenre" : "Country",
+            "subGenre" : ""
+        },
+        {
+            "artistName" : "Rascal Flatts",
+            "albumName" : "Melt",
+            "yearRelease" : 2002,
+            "mainGenre" : "Country",
+            "subGenre" : [
+                "Soul"
+            ]
+        },
+        {
+            "artistName" : "Rascal Flatts",
+            "albumName" : "Unstoppable",
+            "yearRelease" : 2009,
+            "mainGenre" : "Country",
+            "subGenre" : [
+                "Soul"
+            ]
+        },
+        {
+            "artistName" : "Incubus",
+            "albumName" : "Make Yourself",
+            "yearRelease" : 1999,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Alternative"
+            ]
+        },
+        {
+            "artistName" : "Incubus",
+            "albumName" : "Morning View",
+            "yearRelease" : 2001,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Alternative",
+                "Punk Rock"
+            ]
+        },
+        {
+            "artistName" : "Incubus",
+            "albumName" : "Light Grenades",
+            "yearRelease" : 2006,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Alternative",
+                "Punk Rock"
+            ]
+        },
+        {
+            "artistName" : "Ed Sheeran",
+            "albumName" : "x",
+            "yearRelease" : 2014,
+            "mainGenre" : "Soul",
+            "subGenre" : [
+                "Acoustic",
+                "Pop"
+            ]
+        },
+        {
+            "artistName" : "Christina Perri",
+            "albumName" : "Lovestrong",
+            "yearRelease" : 2011,
+            "mainGenre" : "Pop",
+            "subGenre" : ""
+        },
+        {
+            "artistName" : "Christina Perri",
+            "albumName" : "Head of Heart",
+            "yearRelease" : 2014,
+            "mainGenre" : "Pop",
+            "subGenre" : ""
+        },
+        {
+            "artistName" : "Carrie Underwood",
+            "albumName" : "Carnival Ride",
+            "yearRelease" : 2007,
+            "mainGenre" : "Pop",
+            "subGenre" : [
+                "Country Pop"
+            ]
+        },
+        {
+            "artistName" : "Carrie Underwood",
+            "albumName" : "Blown Away",
+            "yearRelease" : 2012,
+            "mainGenre" : "Pop",
+            "subGenre" : [
+                "Country Pop"
+            ]
+        },
+        {
+            "artistName" : "Metallica",
+            "albumName" : "Load",
+            "yearRelease" : 1996,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Heavy Rock",
+                "Heavy Metal"
+            ]
+        },
+        {
+            "artistName" : "Metallica",
+            "albumName" : "Reload",
+            "yearRelease" : 1997,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Heavy Rock",
+                "Heavy Metal"
+            ]
+        },
+        {
+            "artistName" : "Metallica",
+            "albumName" : "Death Magnetic",
+            "yearRelease" : 2008,
+            "mainGenre" : "Rock",
+            "subGenre" : [
+                "Heavy Metal"
+            ]
+        },
+        {
+            "artistName" : "Alanis Morissette",
+            "albumName" : "Jagged Little Pill",
+            "yearRelease" : 1995,
+            "mainGenre" : "Alternative",
+            "subGenre" : [
+                "Rock"
+            ]
+        }
+    ]
+}

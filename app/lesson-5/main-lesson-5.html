@@ -1,0 +1,77 @@
+<div class="container" ng-controller="ServiceCtrl as serviceCtrl">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 5: Understanding AngularJS Services</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row">
+        <!-- Left Hand Side -->
+        <div class="col-xs-6" style="border-right: 1px solid #8c348b;">
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">AngularJS Service as Model</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+
+            <div class="row add-padding">
+                <div class="col-xs-8">
+                    <button type="button" class="btn btn-equens" ng-click="serviceCtrl.bindServiceData()"><h5>Bind Model Data</h5></button> 
+                </div>
+            </div>
+            
+            <div class="row" style="margin-top: 30px;">
+                <span class="header-h2">From External Services</span>
+            </div>
+            <div class="row violet-dashed-border" style="width: 95%"></div>
+            
+            <div class="row add-padding">
+                <div class="col-xs-8">
+                    <button type="button" class="btn btn-equens" ng-click="serviceCtrl.bindJSONData()"><h5>Bind JSON Data</h5></button> 
+                </div>
+            </div>
+        </div>
+        <!-- Right Hand Side -->
+        <div class="col-xs-6">
+            <div style="margin-top: 30px;">
+                <form class="add-padding">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <strong>First Name: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="serviceCtrl.form.firstName" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Last Name: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="serviceCtrl.form.lastName" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Jersey Number: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="serviceCtrl.form.jerseyNumber" />
+                        </div>
+                    </div>
+                    
+                    <div class="row form-padding">
+                        <div class="col-xs-4">
+                            <strong>Team: </strong>
+                        </div>
+                        <div class="col-xs-6">
+                            <input type="text" readonly class="input-sm form-control" ng-model="serviceCtrl.form.teamName" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>

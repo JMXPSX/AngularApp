@@ -1,0 +1,91 @@
+<div class="container" ng-controller="Lesson1Ctrl">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 1: Basic AngularJS Binding</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">Simple Two-Way Binding</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row">
+        <div class="col-xs-6 position-middle add-padding">
+            <form>
+                <!-- Name -->
+                <div class="row">
+                    <div class="col-xs-4">
+                        <strong>Enter Your Name: </strong>
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" class="input-sm form-control" ng-model="form.name" />
+                    </div>
+                </div>
+                
+                <!-- Email -->
+                <div class="row form-padding">
+                    <div class="col-xs-4">
+                        <strong>Enter Your E-Mail: </strong>
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" class="input-sm form-control" ng-model="form.email" />
+                    </div>
+                </div>
+                
+                <!-- Age -->
+                <div class="row form-padding">
+                    <div class="col-xs-4">
+                        <strong>Enter Birth Year: </strong>
+                    </div>
+                    <div class="col-xs-6">
+                        <select class="input-sm form-control" ng-model="form.birthYear" ng-init="form.birthYear = '1990'">
+                            <option selected>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                            <option>1994</option>
+                            <option>1995</option>
+                            <option>1996</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-xs-6 add-padding">
+            <div class="row">
+                <div class="col-xs-4">
+                    <strong>Entered Name: </strong>
+                </div>
+                <div class="col-xs-6">
+                    {{form.name}}
+                </div>
+            </div>
+            
+            <div class="row form-padding">
+                <div class="col-xs-4">
+                    <strong>Entered E-Mail: </strong>
+                </div>
+                <div class="col-xs-6">
+                    {{form.email}}
+                </div>
+            </div>
+            
+            <div class="row form-padding">
+                <div class="col-xs-4">
+                    <strong>Your Age Today: </strong>
+                </div>
+                <div class="col-xs-6">
+                    {{currentDate.getFullYear() - form.birthYear}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">Method Binding</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+
+    <ng-include src="'lesson-1/main-lesson-1-conditions.html'"></ng-include>
+
+</div>

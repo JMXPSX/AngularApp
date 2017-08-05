@@ -1,0 +1,164 @@
+/* app css stylesheet */
+
+textarea {
+    resize: none;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.navbar-default {
+    border-color: #800080;
+    background-color: #E5007E;
+    background-image: none !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default:hover .navbar-brand:hover {
+    color: none;
+}
+
+.navbar-brand:hover {
+    color: transparent;
+}
+
+.main-content {
+    padding-top: 65px;
+}
+
+/**  DEFAULT AND CUSTOMIZED **/
+
+
+.btn-view-toggle {  
+    background-color: #8C348B;
+    color: #ffffff !important; 
+    border-color: #F2F2F2;
+    width: inherit;
+}
+
+.btn-view-toggle:hover,
+.btn-view-toggle:focus,
+.btn-view-toggle.focus,
+.btn-view-toggle:active,
+.btn-view-toggle.active,
+.open > .dropdown-toggle.btn-view-toggle {
+  color: #ffffff !important;
+  background-color: #CCCCCC;
+}
+.btn-view-toggle:active,
+.btn-view-toggle.active,
+.open > .dropdown-toggle.-view-toggle{
+  background-image: none;
+}
+
+.btn-equens {
+    background-color: #e5007e;
+    color: #ffffff !important;
+    font-size: 12px;
+    width: inherit;    
+}
+
+.panel-heading {
+    background-image : none !important;
+}
+
+.panel-equens {
+    background-color : #e5007e !important;
+    color: #ffffff !important;
+    font-size: 12px;
+    width: inherit;    
+}
+
+.btn-equens:hover:enabled {
+    background-color: #8C348B;
+    color: #ffffff !important;
+}
+
+.div-spacing {
+    margin-top: 60px;
+}
+
+.header-h1 {
+    color: #e5007e;
+    font-size: 26px;
+    text-align: center;
+}
+
+.header-h2 {
+    color: #8c348b;
+    font-size: 18px;
+}
+
+.header-h3 {
+    color: #8c348b;
+    font-size: 16px;
+}
+
+.auxiliary-text {
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.violet-dashed-border {
+    border-bottom: 2px dotted #E5007E;
+    margin-top: 10px;
+}
+
+.position-middle {
+    margin: 0 auto 0 auto;
+}
+
+.form-padding {
+    padding-top: 10px;
+}
+
+.add-padding {
+    padding-top: 15px;
+}
+
+.extra-padding {
+    padding-top: 2px;
+}
+
+.label-blue {
+    color: #0000ff;
+}
+
+.label-red {
+    color : #ff0000;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    height : 500px;
+    width : 98%
+}

@@ -1,0 +1,41 @@
+<div class="container" ng-controller="ConstantCtrl as constantCtrl">
+    <div class="row" style="margin-top: 40px;">
+        <span class="header-h1">Lesson 7: Understanding AngularJS Constants</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">Common AngularJS Constants</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-2"><strong>As Primitive Value: </strong></div>
+        <div class="col-xs-4">{{constantCtrl.primitiveValue}}</div>
+    </div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-2"><strong>As An Array: </strong></div>
+        <div class="col-xs-4">{{constantCtrl.arrayValue}}</div>
+    </div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-2"><strong>As A Date: </strong></div>
+        <div class="col-xs-4">{{constantCtrl.dateToday | date:'MM.dd.yyyy'}}</div>
+    </div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-2"><strong>As An Object: </strong></div>
+        <div class="col-xs-4">{{constantCtrl.constantObject}}</div>
+    </div>
+    
+    <div class="row" style="margin-top: 30px;">
+        <span class="header-h2">Dynamic Constants</span>
+    </div>
+    <div class="row violet-dashed-border"></div>
+    
+    <div class="row add-padding">
+        <div class="col-xs-4"><strong>Dynamic Constant (PREFIX_SUFFIX): </strong></div>
+        <div class="col-xs-4">{{constantCtrl.dynamic1}}</div>
+    </div>
+</div>
